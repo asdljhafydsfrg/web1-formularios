@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h2>Presentacion</h2>
+        <fieldset>
+            <label for="nombreid">Nombre</label>
+            <input type="text" name="nombre" id="nombreid">
+            <label for="Apellidoid">Apellido</label>
+            <input type="text" name="apellido" id="Apellidoid">
+            <label for="emailid">Email</label>
+            <input type="email" name="email" id="emailid" required>
+            <label for="generoId">♀ Genero</label>
+            <select name="genero" id="generoId">
+                <option value="masc">Masculino</option>
+                <option value="fem">Femenino</option>
+                <option value="pref">Prefiero no decirlo</option>
+            </select>
+        </fieldset>
+        <h2>Datos personales</h2>
+        <fieldset>
+            <label for="fechaNac">Fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="fechaNac">
+            <label for="dniID">DNI</label>
+            <input type="number" name="dni" id="dni">
+            <label for="telefonoID">Numero de telefono</label>
+            <input type="number" name="telefono" id="telefonoID" required>
+        </fieldset>
+        <h2>Redes Sociales</h2>
+        <fieldset>
+            <label for="xUsu">Usuario de X</label>
+            <input type="text" name="usuarioX" id="xUsu" required>
+            <label for="igUsu">Usuario de Instagram</label>
+            <input type="text" name="usuarioIG" id="igUsu" required>
+        </fieldset>
+        <h2>Locación</h2>
+        <fieldset>
+            <label for="CiudadID">Ciudad</label>
+            <input type="text" name="ciudad" id="CiudadID" required>
+            <label for="provinciasID">Provincia</label>
+            <select name="provincias" id="provinciasID">
+                <option value="elegir">Elegir...</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+                <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+            </select>
+
+        </fieldset>
+        <h2>Hablanos de vos!</h2>
+        <fieldset>
+            <textarea rows="10" cols="40">Cuentanos que estilo de juegos te agrada jugar</textarea>
+
+
+            <input class="botonenviar" type="submit" value="Enviar" required>
+        </fieldset>
+        <h2>Contanos tus preferencias
+        </h2>
+        <fieldset>
+            <p><strong><u>Cual es tu juego favorito?</u></strong></p>
+            <label for="MCID">Minecraft</label>
+            <input type="radio" name="mc" id="MCID">
+
+            <label for="csID">Counter strike</label>
+            <input type="radio" name="cs" id="csID">
+
+            <label for="fnID">Fortnite</label>
+            <input type="radio" name="fn" id="fnID">
+
+            <label for="ffID">Free Fire</label>
+            <input type="radio" name="ff" id="ffID">
+
+            <label for="rlID">Rocket League</label>
+            <input type="radio" name="rl" id="rlID">
+        </fieldset>
+        <fieldset>
+            <label for="rangoID">Que tanto te gusta jugar videojuegos?</label>
+            <input type="range" name="rango" id="rangeID" min="1" max="10" step="0.5">
+        </fieldset>
+        <input class="botonenviar" type="submit" value="Enviar" required>
+
+        <input type="range" list="tickmarks" />
+        <datalist id="tickmarks">
+            <option value="0">0</option>
+            <option value="10">1</option>
+            <option value="20">2</option>
+            <option value="30">3</option>
+            <option value="40">4</option>
+            <option value="50">5</option>
+            <option value="60">6</option>
+            <option value="70">7</option>
+            <option value="80">8</option>
+            <option value="90">9</option>
+            <option value="100">10</option>
+        </datalist>
+
+
+
+    </form>
+</body>
+
+</html>
